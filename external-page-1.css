@@ -1,0 +1,282 @@
+@font-face {
+	font-family: "edo";
+	src: url("typefonts/Edo/edo.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+@font-face {
+	font-family: "underwood-champion";
+	src: url("typefonts/Underwood-Champion/underwood_champion.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+@font-face {
+	font-family: "slabo";
+	src: url("typefonts/slabo/Slabo27px-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+body {
+	margin: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #a8a8a8;
+}
+
+.super-container {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+.menu-container {
+	margin: auto;
+	width: 400px;
+	height: 500px;
+}
+.menu {
+	position: absolute;
+	top: -600px;
+	z-index: 50;
+	
+	
+	width: 400px;
+	height: 500px;
+	padding-top: 20px;
+	border: 2px solid white;
+	border-radius: 2%;
+	
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.menu-options {
+	margin: 35px;
+}
+.main-title {
+	margin-top: 5px;
+	font-size: 35px;
+	font-family: "slabo";
+	color: white;
+}
+.button {
+	padding: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 5%;
+	
+	text-decoration: none;
+	font-family: "edo";
+	font-size: 30px;
+	color: white;
+	
+	border: 2px solid black;
+	transition: all 1s;
+}
+.button:hover {
+	border: 2px solid white;
+}
+.justmusic.pause {
+	border: 2px solid white;
+}
+.musictoggle.pause {
+	border: 2px solid white;
+}
+.close-button {
+	padding: 10px;
+	border-radius: 100%;
+	
+	width: 50px;
+	height: 50px;
+	color: white;
+}
+
+
+.menu-button-container {
+	position: absolute;
+	top: 20px;
+	z-index: 40;
+	width: 100%;
+	height: 60px;
+}
+.menu-button {
+	
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	padding: 20px;
+	
+	border-radius: 100%;
+	border: 1px solid white;
+	background-color: rgba(50,50,50,0.7);
+}
+.fa-bars {
+	color: white;
+	margin: auto;
+}
+.slide-controls-container {
+	width: 250px;
+	height: 100px;
+	
+	margin: auto;
+	
+}
+.slide-controls {
+	position: absolute;
+	top: 550px;
+	width: 250px;
+	height: 100px;
+}
+.previous {
+	width: 75px;
+	height: 75px;
+	
+	position: absolute;
+	left: 15px;
+	top: 45%;
+	z-index: 10;
+	
+	color: #181818;
+	transition: color 1s;
+}
+.next {
+	width: 75px;
+	height: 75px;
+	
+	position: absolute;
+	right: 15px;
+	top: 45%;
+	z-index: 10;
+	
+	color: #181818;
+	transition: color 1s;
+}
+.previous:hover {
+	color: #383838;
+}
+.next:hover {
+	color: #383838;
+}
+
+.screen-cover {
+	position: absolute;
+	top: 0px;
+	z-index: 35;
+	width: 100%;
+	height: 100vh;
+	
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+}
+.video-container {
+	margin: auto;
+	width: 900px;
+	height: 550px;
+}
+.random-video {
+	position: absolute;
+	top: 220px;
+	z-index: 45;
+	display: none;
+}
+.close-video {
+	position: absolute;
+	bottom: -60px;
+	left: 350px;
+	
+	width: 200px;
+	height: 30px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 2%;
+	
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.picture-container {
+	position: fixed;
+	top: 0px;
+	z-index: 5;
+	
+	width: 100vw;
+	height: 100vh;
+	border: 2px solid gray;
+}
+.main-picture {
+	position: fixed;
+	top: -30%;
+	left: -20%;
+	width: initial;
+	opacity: 0;
+	z-index: 2;
+}
+.main-picture.show {
+	opacity: 1;
+	z-index: 5;
+}
+.quote-container {
+	margin: auto;
+	width: 800px;
+	height: 200px;
+}
+.quote-box {
+	width: 800px;
+	height: 200px;
+	padding: 40px;
+	
+	position: absolute;
+	z-index: 20;
+	top: 30%;
+	
+	background: rgba(50,50,50,0.5);
+	border-radius: 2%;
+	text-align: center;
+	
+	transition: background 1s;
+}
+.quote-box:hover {
+	background: rgba(50,50,50,0.8);
+}
+.quote {
+	font-family: "underwood-champion";
+	font-size: 30px;
+	color: white;
+	display: none;
+}
+.quote.show {
+	display: inline;
+}
+
+@media (max-width: 1000px) {
+	.quote-container {
+		width: 500px;
+		height: 120px;
+	}
+	.quote-box {
+		width: 500px;
+		height: 120px;
+		padding-top: 20px;
+	}
+	.quote {
+		font-size: 24px;
+	}
+}
+@media (max-width: 700px) {
+	.quote-container {
+		width: 300px;
+		height: 120px;
+	}
+	.quote-box {
+		width: 300px;
+		height: 120px;
+	}
+	.quote {
+		font-size: 18px;
+	}
+}

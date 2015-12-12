@@ -1,0 +1,318 @@
+@font-face {
+	font-family: "slabo";
+	src: url("typefonts/slabo/Slabo27px-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "comfortaa";
+	src: url("typefonts/Comfortaa/Comfortaa_Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+@font-face {
+	font-family: "underwood-champion";
+	src: url("typefonts/Underwood-Champion/underwood_champion.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+@font-face {
+	font-family: "edo";
+	src: url("typefonts/Edo/edo.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+
+body {
+	margin: 0px;
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.remove-overflow {
+	overflow-y: visible;
+}
+/*consider changing the z index for the blank box to show on black screen, which will
+have an even higher z-index*/
+.intro-cover {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	position: absolute;
+	z-index: 30;
+}
+.intro-text {
+	width: 800px;
+	height: 100px;
+	margin: auto;
+}
+.hello {
+	color: white;
+	font-size: 25px;
+	
+	position: relative;
+	top: 230px;
+	left: 100px;
+	z-index: 45;
+	display: none;
+	
+}
+.feeling {
+	color: white;
+	font-size: 25px;
+	
+	position: relative;
+	top: 240px;
+	left: 100px;
+	z-index: 45;
+	display: none;
+}
+.skip {
+	color: white;
+	font-family: "Arial";
+	font-size: 15px;
+	
+	position: relative;
+	top: 200px;
+	left: 45%;
+	z-index: 45;
+}
+
+
+#top-banner {
+	position: absolute;
+	z-index: 15;
+	width: 100%;
+	height: 90px;
+	text-align: center;
+	padding-top: 50px;
+	/*background-color: rgba(192,192,192, 0.3);*/
+	background: -webkit-linear-gradient(rgba(192,192,192,0.4)-30px, rgba(255,0,0,0)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgba(192,192,192,0.4)-30px, rgba(255,0,0,0)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgba(192,192,192,0.4)-30px, rgba(255,0,0,0)); /*Fx 3.6-15*/
+	background: linear-gradient(rgba(192,192,192,0.4)-30px, rgba(255,0,0,0)); /*Standard*/
+}
+.top-links {
+	margin: 50px 80px 50px 80px;
+	padding: 20px;
+	border-radius: 5px;
+	
+	text-decoration: none;
+	font-family: "edo";
+	font-size: 30px;
+	color: #b8b8b8;
+	transition: all 0.75s; /*add other browser supported*/
+}
+.top-links:hover {
+	background-color: #b8b8b8;
+	color: black;
+}
+#music-button-container {
+	position: absolute;
+	top: 130px;
+	
+	width: 100%;
+	height: 40px;
+	z-index:16;
+	text-align: center;
+}
+#music-container {
+	position: absolute;
+	top: 190px;
+	
+	width: 100%;
+	height: 50px;
+	z-index: 14;
+	text-align: center;
+	visibility: hidden;
+}
+
+#music-toggle {
+	position: relative;
+	left: 8px;
+	bottom: -5px;
+	padding: 12px 20px 12px 20px;
+	border-radius: 100%;
+	border: 2px solid white;
+	background-color: #181818;
+}
+.fa-music {
+	color: white;
+	margin: auto;
+}
+.fa-play {
+	color: white;
+	margin: auto;
+}
+.fa-pause {
+	color: white;
+	margin: auto;
+}
+#background-music {
+	/*visibility: hidden*/
+}
+
+.main-home-container {
+	width: 100%;
+	height: 100vh; /*not supported by IE*/
+	
+}
+
+#wallpaper {
+	position: absolute;
+	z-index: 10;
+	opacity: 0.3;
+}
+
+
+#descriptor-container {
+	margin: auto;
+	height: 600px;
+	width: 800px;
+}
+.center-descriptor {
+	position: absolute;
+	top: 200px;
+	height: 600px;
+	width: 800px;
+	z-index: 40;
+	display: none;
+}
+
+#i-am {
+	position: absolute;
+	top: 210px;
+	left: 110px;
+	
+	font-size: 40px;
+	color: white;
+	
+}
+#blank-box {
+	position: absolute;
+	top: 200px;
+	left: 210px;
+	padding-top: 5px;
+	height: 45px;
+	width: 400px;
+	
+	border: 2px solid white;
+	text-align: center;
+}
+.boxtext {
+	position: relative;
+	top: -30px;
+	font-size: 32px;
+	color: white;
+	display: none;
+}
+/*.boxtext.showtext {
+	position: relative;
+	top: 0px;
+	display: inline;
+}*/
+.list-container {
+	position: absolute;
+	left: 210px;
+	top: 253px;
+	height: 200px;
+	width: 404px;
+	display: none;
+	transition: all 0.25s; /*add other browser supported*/
+}
+.showlist{
+	display: inline;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	/*border: 2px solid #b0b0b0;*/
+}
+li {
+	width: 400px;
+	height: 40px;
+	/*border: 1px solid green;*/
+	text-align: center;
+	/*border-top: 1px solid white;*/
+	border-radius: 5px;
+	
+	color: white;
+	transition: background-color 0.25s; /*add other browser supported*/
+}
+li:hover {
+	background-color: #181818;
+}
+.descriptor {
+	font-size: 32px;
+	text-decoration: none;
+	color: white;
+}
+
+.go-to-container {
+	position: absolute;
+	left: 290px;
+	top: 350px;
+	width: 250px;
+	height: 50px;
+	padding-top: 10px;
+	text-align: center;
+	display: none;
+	transition: background-color 0.5s;
+}
+.descriptor-link {
+	font-size: 28px;
+	font-family: "underwood-champion";
+	color: white;
+	display: none;
+	padding: 20px;
+	text-decoration: none;
+	transition: all 1s;
+}
+.descriptor-link.showlink {
+	display: inline;
+}
+.descriptor-link:hover {
+	color: #383838;
+	background-color: #d0d0d0;
+}
+
+.center-purpose {
+	position: absolute;
+	top: 200px;
+	height: 600px;
+	width: 800px;
+	z-index: 20;
+	display: none;
+	text-align: center;
+}
+.purpose-title {
+	font-size: 50px;
+	text-decoration: underline;
+	color: white;
+	font-family: "edo";
+}
+.purpose-text {
+	font-size: 25px;
+	color: white;
+	font-family: "edo";
+}
+.center-videos {
+	position: relative;
+	top: 200px;
+	left: -208px;
+	height: 1000px;
+	width: 1280px;
+	z-index: 20;
+	display: none;
+}
+.video {
+	margin: 30px;
+	float: left;
+}
+.video:hover {
+	margin: 25px;
+	border: 5px solid #b8b8b8;
+}
+
