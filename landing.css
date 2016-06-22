@@ -1,0 +1,144 @@
+@font-face {
+	font-family: "ostrich";
+	src: url("typefonts/ostrich-sans/ostrich-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+body {
+	margin: 0px;
+	background-color: black;
+}
+
+.main-home-wrapper {
+	max-width: 100%;
+	height: 100vh;
+	overflow: auto;
+}
+
+.pan-image {
+	display: none;
+}
+.pan-image.active {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	
+	
+	background-image: url("media/background_h_1.jpg");
+	background-repeat: repeat-x;
+	animation: backgroundScroll 10s linear infinite;
+}
+.pan-image.loading {
+}
+@keyframes backgroundScroll {
+	from {background-position: 0 0;}
+	to {background-position: -400px 0;}
+}
+
+#title-wrapper {
+	font-size: 70px;
+	width: 10em;
+	position: absolute;
+	z-index: 30;
+	top: 300px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	
+}
+#title {
+	
+	
+	display: inline-block;
+	font-size: 70px;
+	width: 9.5em;
+	
+	letter-spacing: 0.3em;
+	text-align: left;
+	color: white;
+	font-family: "ostrich";
+	
+	padding: 10px;
+	padding-left: 1em;
+}
+
+.upper-links-wrapper {
+	position: absolute;
+	z-index: 20;
+	top: 50px;
+	left: 100px;
+	
+	margin: 20px;
+	
+}
+.upper-links {
+	
+	margin: 50px;
+	font-size: 30px;
+	
+	color: white;
+	font-family: "ostrich";
+	text-decoration: none;
+	padding-bottom: 10px;
+}
+.upper-links:hover {
+	border-bottom: 2px solid white;
+}
+.upper-links.active {
+	border-bottom: 2px solid white;
+}
+
+.browse-button-wrapper {
+	position: absolute;
+	z-index: 30;
+	top: 450px;
+	
+	font-size: 30px;
+	width: 12em;
+	text-align: center;
+	
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.browse-button {
+	display: none;
+	margin: auto;
+	text-decoration: none;
+	color: white;
+	
+	font-family: "ostrich";
+	
+	padding: 20px;
+	border: 2px solid white;
+	transition: background 0.5s linear;
+}
+.browse-button:hover {
+	border: 2px solid black;
+	background-color: black;
+	color:#4d94ff;
+	
+}
+
+.main-about-wrapper {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 0px;
+	
+	transition: width 1s ease-out;
+    overflow: hidden;
+	
+	max-width: 100%;
+	height: 100vh;
+	
+	background-color: #4d94ff;
+}

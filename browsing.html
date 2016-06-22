@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Browsing Music and Art</title>
+		<link href = "browsing.css" rel = "stylesheet"/>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="js/jquery-custom-scrollbar-0.5.5/jquery.custom-scrollbar.css">-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!--<script src = "js/jquery-custom-scrollbar-0.5.5/jquery.custom-scrollbar.js" type = "text/javascript"></script>-->
+		
+		<script src = "js/browsing.js" type = "text/javascript"></script>
+		
+	</head>
+	
+	<body>
+		
+		
+		<section class = "overhead-wrapper">
+			<a class = "overhead-title" href = "index.html">LUMINOUS WAVES</a>
+		</section>
+		
+		<section class = "main-content-wrapper">
+			
+			
+		</section>
+		
+		<section class = "fullscreen-wrapper">
+		
+			<div class = "exit-fullscreen-wrapper">
+				CLOSE
+				<i class="fa fa-minus-square-o" id = "fullscreen-close"></i>
+			</div>
+		
+			<div class = "maximized-box">
+				<div class = "previous-select-wrapper">
+					<div class = "chevron-selectors">
+						<i class="fa fa-2x fa-chevron-left chevron-buttons"></i>
+					</div>
+				</div>
+				<div class = "after-select-wrapper">
+					<div class = "chevron-selectors">
+						<i class="fa fa-2x fa-chevron-right chevron-buttons"></i>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "bottom-selector-wrapper">
+				<div class = "bottom-box-wrapper">
+					<div class = "bottom-image-box lower-box-1"></div>
+					<div class = "bottom-image-box lower-box-2"></div>
+					<div class = "bottom-image-box lower-box-3"></div>
+					<div class = "bottom-image-box lower-box-4"></div>
+					<div class = "bottom-image-box lower-box-5"></div>
+				</div>
+			
+			</div>
+			
+			
+		</section>
+		
+		
+		<section class = "sidebar-wrapper">
+			<div class = "sidebar-background">
+			
+			</div>
+			<div class = "sidebar-hide-button">
+				<div class = "hide-icon-wrapper">
+					<i class="fa fa-times sidebar-button" id = "sidebar-button-resize"></i>
+				</div>
+			</div>
+			
+			<div class = "album-cover">
+			
+				<div class = "current-playing-wrapper">
+					<div class = "now-playing">Now Playing:</div>
+					<div class = "current-title">Magic Man - Paris</div>
+				</div>
+				
+				<div class = "music-controls-wrapper">
+					<div class = "music-sound-wrapper">
+						<i class="fa fa-volume-up fa-2x outside-button sound-button"></i>
+					</div>
+					<div class = "music-play-wrapper">
+						<i class="fa fa-play fa-3x center-button"></i>
+					</div>
+					<div class = "music-repeat-wrapper">
+						<i class="fa fa-exchange fa-2x outside-button repeat-button" ></i>
+					</div>
+				</div>
+			</div>
+			
+			<audio id = "background-music">
+				<source src = "media/music/p_01.mp3" type = "audio/mp3" id = "music-source"></source>
+			</audio>
+			
+			<div class = "playlist-wrapper">
+			
+			</div>
+			
+		
+		
+		</section>
+		
+		
+		
+	</body>
+
+
+
+</html>
